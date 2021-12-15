@@ -1,0 +1,134 @@
+body{
+    background-size: cover;
+    background-image: url('../images/bg.png');
+}
+
+
+  .title-container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: 70px 85px ;
+    background-color: lightgrey;
+    padding:5px;
+    height: fit-content;
+}
+
+.searchBar{
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 30px;
+    
+}
+
+
+.news-management-container {
+    display:grid; 
+    grid-template-columns: auto auto auto;
+    text-align: right;
+}
+
+#search_auteur{
+    background-color: white;
+    color:black;
+}
+
+.container{
+    margin-top: 5%;
+    height: fit-content;
+}
+
+
+
+/* .item1 { grid-area: titre; }
+.item2 { grid-area: avatar; }
+.item3 { grid-area: auteur;}
+.item4 { grid-area: date; }
+.item5 { grid-area: image; }
+.item7 { grid-area: left; }
+.item8 { grid-area: texte; } */
+
+/* .grid-container {
+  display: grid;
+  grid-template-areas:
+    'avatar titre titre titre titre titre'
+    'auteur image image image image image'
+    'date image image image image image'
+    'left texte texte texte texte texte';
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+    grid-gap: 5px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  padding-left: 10px;
+  border:2px solid black;
+  /*font-size: 30px;*/
+}
+
+.usernameNews{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 15px;
+}
+
+.avatarGrid{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid pink;
+    width:48px;
+    height: 48px;
+    text-align: right;
+    border-radius: 24px;
+    float: right;
+    padding: 0px !important;
+}
+
+.texteNews{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-right:10px;
+
+}
+.titleNews{
+    margin-right:10px;
+    font-weight: bolder;
+    font-size: large;
+}
+.imageNews{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.dateNews{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: fit-content;
+}
+
+.positionnement-image{
+    margin-left: 50%;
+}
+
+.positionbtn{
+    float: right;
+    font-size:10px;
+}
